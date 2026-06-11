@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Phân tích Golf Chuyên sâu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pgaGreen: '#01411C',
+                        charcoal: '#333333',
+                    },
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'Times', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f8f9fa;
+        }
+        .text-justify {
+            text-align: justify;
+        }
+        .report-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .divider {
+            border-bottom: 2px solid #C5A059; /* Gold accent */
+            margin: 20px 0;
+        }
+        .callout {
+            background-color: #f1f7f2;
+            border-left: 4px solid #01411C;
+        }
+    </style>
+</head>
+<body class="py-10 px-4">
+
+    <main class="report-container p-8 md:p-16">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-pgaGreen mb-2">AI HLV Golf - Huấn Luyện Viên Golf Trí Tuệ Nhân Tạo</h1>
+            <p class="text-xl text-charcoal italic mb-4">Cải thiện swing - Nâng tầm trò chơi - An toàn & Bền vững</p>
+            <div class="text-sm text-gray-500 border-t border-b py-2">Ngày thực hiện: 11 tháng 6 năm 2026</div>
+        </header>
+
+        <!-- Golfer Profile -->
+        <section class="bg-gray-100 p-6 rounded-lg mb-10 border border-gray-200">
+            <h2 class="text-2xl font-bold text-pgaGreen mb-4">Thông tin Golfer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <p><strong>Họ và tên:</strong> Phạm Hoàng Anh</p>
+                <p><strong>VGA ID:</strong> 82017</p>
+                <p><strong>Handicap hiện tại:</strong> 36</p>
+                <p><strong>Trình độ:</strong> Beginner/Intermediate</p>
+            </div>
+        </section>
+
+        <!-- Main Report Body -->
+        <article class="space-y-8 text-charcoal text-justify">
+            <p>Chào bạn Phạm Hoàng Anh (VGA: 82017),</p>
+            <p>Dưới đây là bản báo cáo phân tích chuyên sâu về kỹ thuật Swing của bạn từ góc nhìn của một huấn luyện viên PGA chuyên nghiệp. Với mức Handicap 36, tiềm năng cải thiện của bạn là rất lớn nếu chúng ta tập trung vào những thay đổi căn bản về cơ học và sự đồng bộ.</p>
+
+            <section>
+                <h2 class="text-2xl font-bold text-pgaGreen mb-4">1. Phân tích Cơ học Swing (Swing Mechanics)</h2>
+                <ul class="space-y-4 list-disc pl-5">
+                    <li><strong>Setup & Posture (Tư thế chuẩn bị):</strong> Hiện tại, sự thiếu ổn định bắt đầu ngay từ tư thế đứng. Bạn cần đảm bảo trọng lượng phân bổ đều ở lòng bàn chân, giữ góc gập hông tự nhiên để tạo không gian cho cánh tay vung tự do mà không bị gò bó.</li>
+                    <li><strong>Backswing (Đưa gậy lên):</strong> Bạn đang có xu hướng dùng tay nhấc gậy thay vì xoay vai và hông. Điều này làm mất kết nối giữa tay và thân mình, dẫn đến mặt phẳng swing không ổn định.</li>
+                    <li><strong>Downswing (Hạ gậy):</strong> Đây là điểm yếu nhất. Thay vì bắt đầu từ thân dưới, bạn đang dùng vai lao ra trước, tạo đường gậy "chém" từ ngoài vào trong (Out-to-In).</li>
+                    <li><strong>Impact (Điểm tiếp xúc):</strong> Bạn đang gặp lỗi "Casting" (nhả cổ tay sớm) và "Scooping" (cố hất bóng lên). Tại điểm chạm bóng, tay bạn đi sau đầu gậy, khiến lực nén bóng bị mất và dễ gây ra các cú đập đất hoặc vấp đầu bóng.</li>
+                    <li><strong>Follow-through (Kết thúc):</strong> Trọng lượng chưa chuyển hết sang chân trái, cơ thể có xu hướng ngả về sau. Lỗi "Chicken wing" (khuỷu tay trái gập) hiện rõ do thân trên ngừng xoay quá sớm.</li>
+                </ul>
+            </section>
+
+            <section class="callout p-6">
+                <h2 class="text-2xl font-bold text-pgaGreen mb-4">2. Giải đáp thắc mắc & Khắc phục lỗi (Troubleshooting)</h2>
+                <p class="font-semibold italic mb-2">Câu hỏi: "Không giảm được handicap, do sai kỹ thuật hay thế nào?"</p>
+                <p><strong>Trả lời:</strong> Do sự thiếu nhất quán trong kỹ thuật tiếp xúc bóng (Impact). Ở mức HDC 36, vấn đề lớn nhất không phải là đánh xa, mà là đánh trúng tâm mặt gậy thường xuyên. Bạn đang gặp 3 trở ngại chính:</p>
+                <ul class="mt-2 space-y-2">
+                    <li>- <strong>Lỗi Over-The-Top:</strong> Làm bóng bay cong (Slice) hoặc lệch hướng, dẫn đến mất nhiều gậy trên fairway.</li>
+                    <li>- <strong>Sai chuyển trọng lượng:</strong> Việc giữ trọng tâm ở chân phải khi đánh bóng khiến điểm tiếp xúc không ổn định.</li>
+                    <li>- <strong>Mất kiểm soát mặt gậy:</strong> Cánh tay hoạt động quá độc lập làm bạn không thể kiểm soát được hướng bóng.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-pgaGreen mb-4">3. Lộ trình hạ Handicap (Action Plan)</h2>
+                <p>Để hạ Handicap từ 36 xuống mức thấp hơn, bạn cần thực hiện các bài tập sau:</p>
+                <ol class="space-y-3 list-decimal pl-5">
+                    <li><strong>Bài tập 1 - Bước chân (Step Drill):</strong> Để cải thiện việc chuyển trọng lượng. Chụm chân khi bắt đầu, bước chân trái lên khi hạ gậy. Điều này ép bạn phải dồn lực về phía mục tiêu.</li>
+                    <li><strong>Bài tập 2 - Đánh nửa Swing (Punch Shot):</strong> Tập trung vào việc giữ cổ tay chắc chắn qua điểm impact. Chỉ cần Swing từ 9 giờ đến 3 giờ, đảm bảo cảm giác bóng "giòn" và trúng tâm.</li>
+                    <li><strong>Bài tập 3 - Kẹp găng tay dưới nách:</strong> Khắc phục lỗi "Chicken wing" và giúp toàn bộ cơ thể xoay đồng bộ hơn.</li>
+                </ol>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="bg-pgaGreen text-white p-6 rounded shadow-lg">
+                <h3 class="text-xl font-bold mb-2 uppercase">Khuyến nghị cá nhân hóa</h3>
+                <p>Đừng cố gắng đánh bóng đi 100% sức lực. Hãy tập luyện với 60-70% tốc độ để làm chủ mặt gậy. Khi bạn đã đánh trúng tâm bóng ổn định, Handicap của bạn sẽ tự động giảm xuống dưới 30 rất nhanh chóng.</p>
+            </section>
+        </article>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-center pt-8 border-t border-gray-300">
+            <p class="font-bold text-charcoal">AI Software Development</p>
+            <p class="text-blue-700 underline mb-4">www.phamhoanganhtokens.com</p>
+            <p class="text-xs text-gray-600 italic">
+                Kết quả tốt nhất đạt được khi bạn kết hợp thực hành dưới sự hướng dẫn trực tiếp của Huấn luyện viên Golf chuyên nghiệp.
+            </p>
+        </footer>
+    </main>
+
+</body>
+</html>
