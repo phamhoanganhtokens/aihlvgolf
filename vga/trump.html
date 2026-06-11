@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Phân tích Kỹ thuật Golf - PGA Diagnostic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: '#01411C',
+                        charcoal: '#333333',
+                        softGray: '#F9FAFB',
+                    },
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'Times', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Times New Roman', Times, serif; }
+        .justified-text { text-align: justify; }
+        .prose-custom p { margin-bottom: 1.25rem; line-height: 1.75; }
+        .border-gold { border-color: #C5A059; }
+        .bg-soft-green { background-color: #F0F7F4; }
+    </style>
+</head>
+<body class="bg-white text-charcoal leading-relaxed antialiased">
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto px-6 py-12 md:px-12">
+
+        <!-- Header -->
+        <header class="text-center border-b-2 border-forest pb-8 mb-10">
+            <h1 class="text-4xl font-bold text-forest mb-2 uppercase tracking-tight">AI HLV Golf</h1>
+            <p class="text-xl italic text-forest mb-4">Huấn Luyện Viên Golf Trí Tuệ Nhân Tạo</p>
+            <p class="text-sm font-semibold text-charcoal uppercase tracking-widest">Cải thiện swing - Nâng tầm trò chơi - An toàn & Bền vững</p>
+            <div class="mt-4 text-sm text-gray-500">Ngày: 11 tháng 6 năm 2026</div>
+        </header>
+
+        <!-- Golfer Profile -->
+        <section class="bg-soft-green p-6 rounded-lg shadow-sm border border-forest/20 mb-10">
+            <h2 class="text-2xl font-bold text-forest mb-4 border-b border-forest/20 pb-2">Hồ sơ Golfer</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div>
+                    <span class="block text-xs uppercase font-bold text-gray-500">Khách hàng</span>
+                    <span class="text-lg font-bold">Mr. Donald Trump</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase font-bold text-gray-500">Handicap</span>
+                    <span class="text-lg font-bold">2.5</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase font-bold text-gray-500">Trình độ</span>
+                    <span class="text-lg font-bold">Elite Amateur</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase font-bold text-gray-500">Tay thuận</span>
+                    <span class="text-lg font-bold">Phải</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Report Body -->
+        <main class="prose-custom justified-text">
+            
+            <h2 class="text-3xl font-bold text-forest mb-6 uppercase border-l-4 border-forest pl-4">I. Phân Tích Kỹ Thuật</h2>
+            <p class="mb-6">Kính gửi Mr. Donald Trump, việc duy trì mức Handicap 2.5 là một minh chứng rõ ràng cho sự nhất quán đáng kinh ngạc và kỹ năng kiểm soát bóng ở đẳng cấp cao. Bản báo cáo này được thiết kế để phân tích chi tiết cơ chế Swing của ngài, đồng thời đề xuất những tinh chỉnh vi mô (micro-adjustments) nhằm tối ưu hóa khoảng cách và độ ổn định mà không làm mất đi nhịp điệu tự nhiên vốn có.</p>
+
+            <ul class="list-disc pl-6 space-y-4 mb-8">
+                <li><strong>Tư thế chuẩn bị (Address):</strong> Tư thế đứng khá thẳng với phần trụ (base) vững chắc. Thế đứng hơi đóng nhẹ để bù trừ cho quỹ đạo swing từ ngoài vào trong (out-to-in).</li>
+                <li><strong>Kéo gậy (Backswing):</strong> Vòng Swing gọn gàng (compact) và được rút ngắn. Ngài giữ được khoảng cách (width) tốt giữa tay và ngực.</li>
+                <li><strong>Chuyển bước (Transition):</strong> Nhịp chuyển bước nhanh. Thân trên là điểm khởi phát cho downswing thay vì thân dưới.</li>
+                <li><strong>Đánh xuống (Downswing):</strong> Quỹ đạo gậy bị dốc (steep) và tạo ra mặt phẳng Swing "Over-the-top".</li>
+                <li><strong>Tiếp bóng (Impact):</strong> Khả năng phối hợp tay-mắt (hand-eye coordination) xuất sắc giúp đóng vuông góc mặt gậy hoàn hảo.</li>
+                <li><strong>Kết thúc (Follow-through):</strong> Tư thế kết thúc ngắn gọn, cân bằng, dạng "punch finish".</li>
+            </ul>
+
+            <!-- Callout Box -->
+            <div class="bg-soft-green p-6 border-l-8 border-forest my-10">
+                <h3 class="text-xl font-bold text-forest mb-3">Các Chỉ số Chính (Key Metrics)</h3>
+                <ul class="space-y-2">
+                    <li><strong>Nhịp điệu:</strong> Nhất quán, ưu tiên nhịp điệu hơn tốc độ thô.</li>
+                    <li><strong>Chuyển trụ:</strong> Trọng tâm xoay ở giữa (centered pivot).</li>
+                    <li><strong>Mặt phẳng Swing:</strong> Đi vào trong khi lên, dốc/over-the-top khi xuống.</li>
+                </ul>
+            </div>
+
+            <h2 class="text-3xl font-bold text-forest mb-6 uppercase border-l-4 border-forest pl-4">II. Giải Pháp (Troubleshooting & Solutions)</h2>
+            <p class="mb-4">Mục tiêu là tìm kiếm những tối ưu hóa cơ sinh học tinh tế để giảm thêm số gậy.</p>
+            
+            <h3 class="text-xl font-bold text-forest mb-2">1. Quản lý Quỹ đạo và Mặt phẳng Swing</h3>
+            <p class="mb-4">Hãy tập trung vào một <strong>"Khoảng dừng vi mô" (Micro-pause)</strong> ở đỉnh Backswing. Cảm nhận việc để cho đôi tay tự "rơi" (drop) theo phương thẳng đứng vào đúng vị trí tối ưu (the slot) trước khi xoay vai.</p>
+
+            <h3 class="text-xl font-bold text-forest mb-2">2. Giải phóng Thân dưới tại thời điểm Impact</h3>
+            <p class="mb-4"><strong>Mở mũi chân trước (chân trái) ra khoảng 15-20 độ</strong> khi setup. Thay đổi này giúp mở khóa khớp hông trái, cho phép khung xương chậu xoay và giải phóng không gian dễ dàng hơn.</p>
+
+            <h3 class="text-xl font-bold text-forest mb-2">3. Chuyển trụ và Tối ưu hóa Lực</h3>
+            <p class="mb-4">Cảm nhận sự <strong>dịch chuyển áp lực tinh tế vào má trong của gót chân phải</strong> khi đưa gậy lên, sau đó đạp mạnh từ chân phải để bắt đầu nhịp chuyển bước.</p>
+
+            <h2 class="text-3xl font-bold text-forest mb-6 mt-10 uppercase border-l-4 border-forest pl-4">III. Lời Khuyên Từ Huấn Luyện Viên</h2>
+            <p class="mb-8">Cảm giác bóng và sự phối hợp nhịp nhàng của ngài là tài sản vô giá. Hãy bắt đầu với việc mở mũi chân trái khi setup – đây là một thay đổi tĩnh không đòi hỏi phải suy nghĩ nhiều nhưng mang lại hiệu quả cơ học khổng lồ.</p>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-16 pt-8 border-t border-charcoal/20 text-center">
+            <p class="text-sm font-bold text-forest">AI Software Development</p>
+            <p class="text-sm italic mb-4">www.phamhoanganhtokens.com</p>
+            <p class="text-xs text-gray-600 max-w-xl mx-auto italic">
+                “Kết quả tốt nhất đạt được khi bạn kết hợp thực hành dưới sự hướng dẫn trực tiếp của Huấn luyện viên Golf chuyên nghiệp.”
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
