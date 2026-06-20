@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Phân tích Swing - PGA Coaching Advisory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pgaGreen: '#01411C',
+                        pgaGold: '#D4AF37',
+                        pgaCharcoal: '#333333',
+                        pgaLightGrey: '#F4F4F4'
+                    },
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'Times', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Times New Roman', Times, serif; }
+        .text-justify { text-align: justify; }
+        .divider-gold { border-bottom: 2px solid #D4AF37; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen py-8 px-4">
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl p-8 md:p-16 border-t-[12px] border-pgaGreen">
+        
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-pgaGreen uppercase tracking-wide mb-2">AI HLV Golf</h1>
+            <p class="text-xl font-medium text-pgaCharcoal italic">Huấn Luyện Viên Golf Trí Tuệ Nhân Tạo</p>
+            <p class="text-sm text-gray-600 mt-2 uppercase">Cải thiện swing - Nâng tầm trò chơi - An toàn & Bền vững</p>
+            <div class="my-6 border-b border-gray-300"></div>
+            <p class="text-lg font-semibold text-pgaCharcoal">Ngày phân tích: 11 tháng 6 năm 2026</p>
+        </header>
+
+        <!-- Golfer Profile Section -->
+        <section class="bg-pgaLightGrey p-6 rounded-lg mb-12 border-l-4 border-pgaGreen">
+            <h2 class="text-2xl font-bold text-pgaGreen mb-4 underline">Hồ sơ Golfer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-pgaCharcoal">
+                <p><strong>Golfer:</strong> HLV Duy Golf facebook</p>
+                <p><strong>Handicap Hiện Tại:</strong> 36</p>
+                <p><strong>Trình độ:</strong> Sơ cấp - Trung cấp</p>
+                <p><strong>Tay thuận:</strong> Phải</p>
+                <p class="col-span-1 md:col-span-2"><strong>Mục tiêu:</strong> Cải thiện tính ổn định, kiểm soát tempo, giảm handicap.</p>
+            </div>
+        </section>
+
+        <!-- Main Report Body -->
+        <article class="space-y-10 text-pgaCharcoal">
+            
+            <div class="prose max-w-none">
+                <p class="text-justify leading-relaxed text-lg">Chào Duy, tôi là huấn luyện viên PGA của bạn hôm nay. Rất vui được phân tích cú swing của bạn. Với Handicap 36, bạn đã sở hữu một nền tảng thể chất và tốc độ ra gậy rất ấn tượng. Dưới đây là bản phân tích chi tiết kỹ thuật cú swing của bạn dựa trên dữ liệu thu thập được:</p>
+            </div>
+
+            <!-- Technical Analysis -->
+            <section>
+                <h2 class="text-3xl font-bold text-pgaGreen mb-6 border-b-2 border-pgaGreen pb-2">1. Phân tích cơ chế Swing</h2>
+                <ul class="space-y-4 text-justify leading-relaxed list-none">
+                    <li><strong class="text-pgaGreen">Setup (Tư thế chuẩn bị):</strong> Tư thế đứng của bạn khá ổn định, khoảng cách giữa hai chân phù hợp. Tuy nhiên, trọng tâm hơi dồn về phía sau gót chân, bạn nên điều chỉnh trọng tâm rơi vào phần giữa lòng bàn chân (balls of feet) để tăng tính linh hoạt.</li>
+                    <li><strong class="text-pgaGreen">Backswing:</strong> Bạn xoay vai khá tốt, nhưng gậy có xu hướng đi quá xa (Overswing) ở đỉnh. Điều này làm mất đi sự kiểm soát và khó tạo ra sự ổn định khi gậy tiếp xúc bóng.</li>
+                    <li><strong class="text-pgaGreen">Downswing:</strong> Tốc độ downswing của bạn rất nhanh, đây là một điểm mạnh về lực. Tuy nhiên, bạn đang dùng tay (arms) quá nhiều để kéo gậy xuống thay vì bắt đầu bằng sự chuyển động của hông.</li>
+                    <li><strong class="text-pgaGreen">Impact (Tiếp xúc bóng):</strong> Do nhịp điệu (tempo) quá nhanh, cổ tay bạn có xu hướng "nhả" sớm (casting/early release). Điều này làm mất đi lực nén (compression) vào quả bóng, dẫn đến những cú đánh không đều (thin hoặc top).</li>
+                    <li><strong class="text-pgaGreen">Follow-through:</strong> Kết thúc cao và đẹp mắt, nhưng sự thăng bằng sau khi đánh xong chưa thực sự ổn định, cho thấy trọng tâm chưa chuyển hoàn toàn sang chân trái.</li>
+                </ul>
+            </section>
+
+            <!-- Troubleshooting -->
+            <section>
+                <h2 class="text-3xl font-bold text-pgaGreen mb-6 border-b-2 border-pgaGreen pb-2">2. Xử lý sự cố & Bài tập</h2>
+                
+                <div class="bg-green-50 p-6 rounded-lg border border-pgaGreen mb-6">
+                    <h3 class="text-xl font-bold text-pgaGreen mb-3">Lỗi 1: Nhịp điệu nhanh & "Ngoáy" cổ tay sớm</h3>
+                    <p class="text-justify mb-4">Bạn đang cố dùng lực tay thay vì trọng lực và sự xoay người. Hãy thử bài tập:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Bài tập "Dừng ở đỉnh" (Pause at the Top):</strong> Khi backswing, hãy dừng lại hoàn toàn ở đỉnh khoảng 1-2 giây. Việc này giúp triệt tiêu quán tính thừa, buộc phần hông phải khởi động downswing trước.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-300">
+                    <h3 class="text-xl font-bold text-pgaGreen mb-3">Lỗi 2: Mất kiểm soát đỉnh Swing (Overswing)</h3>
+                    <p class="text-justify mb-4">Gậy đi quá sâu ra sau đầu làm hỏng mặt phẳng swing. Hãy thử:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Bài tập "Gậy song song" (Parallel Drill):</strong> Chỉ swing đến vị trí tay trái song song mặt đất (vị trí 9 giờ). Tập trung tạo lực bóng tối đa ở biên độ này để cảm nhận sự kiểm soát.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Strategy & Mental -->
+            <section>
+                <h2 class="text-3xl font-bold text-pgaGreen mb-6 border-b-2 border-pgaGreen pb-2">3. Chiến lược & Tâm lý</h2>
+                <p class="text-justify leading-relaxed">Duy có tố chất thể thao tốt, đặc biệt là tốc độ đầu gậy. Ở Handicap 36, sự ổn định quan trọng hơn sức mạnh. Hãy giảm tốc độ xuống 70-80% sức lực. Khi nhịp điệu và vị trí tiếp xúc bóng được cải thiện, Handicap của bạn sẽ giảm rất nhanh xuống dưới 30.</p>
+            </section>
+
+            <!-- Safety & Fitness -->
+            <section>
+                <h2 class="text-3xl font-bold text-pgaGreen mb-6 border-b-2 border-pgaGreen pb-2">4. An toàn & Thể lực</h2>
+                <p class="text-justify leading-relaxed">Để ngăn ngừa chấn thương lưng và cổ tay do nhịp độ quá nhanh, hãy thực hiện các bài giãn cơ động (dynamic stretching) cho nhóm cơ hông và vai trước mỗi buổi tập. Sự linh hoạt của hông sẽ giúp bạn giảm tải áp lực cho phần lưng dưới trong quá trình thực hiện cú xoay.</p>
+            </section>
+
+        </article>
+
+        <!-- Footer -->
+        <footer class="mt-16 pt-8 border-t border-gray-200 text-center">
+            <p class="text-sm text-gray-600 font-bold mb-2">AI Software Development</p>
+            <p class="text-sm text-pgaGreen font-semibold mb-4 underline">www.phamhoanganhtokens.com</p>
+            <p class="text-xs text-pgaCharcoal italic text-justify px-4">
+                Kết quả tốt nhất đạt được khi bạn kết hợp thực hành dưới sự hướng dẫn trực tiếp của Huấn luyện viên Golf chuyên nghiệp.
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
